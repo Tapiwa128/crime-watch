@@ -54,7 +54,7 @@ const Spinner = styled.div`
   left: -10px;
   right: -10px;
   bottom: -10px;
-  border: 3px solid rgba(255, 255, 255, 0.1);
+  border: 3px solid rgba(47, 159, 169, 0.1);
   border-top-color: white;
   border-radius: 50%;
   animation: ${rotate} 1.5s linear infinite;
