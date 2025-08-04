@@ -25,7 +25,7 @@ const LoaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background:rgba(23, 237, 237, 1);
+  background:rgb(209, 213, 213);
   color: black;
   animation: ${fadeIn} 0.5s ease;
 `;
