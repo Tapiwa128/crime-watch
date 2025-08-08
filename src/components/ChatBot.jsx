@@ -6,7 +6,6 @@ import { FaPaperPlane, FaTimes, FaComments } from 'react-icons/fa';
 const responses = {
   police: `📞 Police Contacts:
 - Dispol Chief Supt Chitombi – 0712879953
-- Supt Thomas – 0772732675
 - ZRP WhatsApp – +263774979090
 - Chief Inspector Moyo – 0772363565
 - Insp Mugoni – 0772621746
