@@ -128,7 +128,7 @@ const Login = () => {
     e.preventDefault();
     setIsLoading(true);
     
-    // Dummy credentials
+    // Dummy credentials for demonstration
     const validEmail = 'user@vicfalls.com';
     const validPassword = '123456';
 
@@ -179,7 +179,7 @@ const Login = () => {
         </AuthForm>
 
         <AuthFooter>
-          Don't have an account? <Link to="/signup">Sign Up</Link>
+          Don't have an account? <Link to="/signup">Sign Up</Link> 
         </AuthFooter>
       </AuthBox>
     </AuthContainer>
