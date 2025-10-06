@@ -1,0 +1,2 @@
+username pakamaholdings_db_user
+password YYS20VCauzz5eDRy
