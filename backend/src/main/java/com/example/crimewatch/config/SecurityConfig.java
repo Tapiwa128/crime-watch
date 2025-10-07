@@ -7,6 +7,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.config.Customizer;
 
 @Configuration
 public class SecurityConfig {
@@ -15,11 +16,11 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
             // allow cross-origin requests (CORS). Configure more specifically if needed.
-            .cors().and()
+            .cors(Customizer.withDefaults())
             // disable CSRF for API usage (if you use cookies/sessions consider enabling CSRF)
-            .csrf().disable()
+            .csrf(csrf -> csrf.disable())
             // allow H2 console frames
-            .headers().frameOptions().disable().and()
+            .headers(headers -> headers.frameOptions(frameOptions -> frameOptions.disable()))
             .authorizeHttpRequests(auth -> auth
                 // public endpoints
                 .requestMatchers("/api/auth/**", "/h2-console/**", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
